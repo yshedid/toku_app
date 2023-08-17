@@ -16,7 +16,8 @@ class NumbersScreen extends StatelessWidget {
         itemCount: 10,
         itemBuilder:(context, index) {
         return numbersUi(image_path: NumbersData.pathGet(index),
-        jtext: NumbersData.eNumGet(index), etext: NumbersData.jNumGet(index));
+        jtext: NumbersData.eNumGet(index), etext: NumbersData.jNumGet(index),
+        soundFileName: NumbersData.soundGet(index));
       }, ));
   }
 }
