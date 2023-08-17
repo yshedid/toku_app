@@ -41,4 +41,36 @@ class FamilyData
   static pathGet(int idx) =>_Path[idx];
   static soundGet(int idx) => _sound[idx];
 
+}class ColorData
+{
+  static final List _eWord = ["black","brown","dusty yellow","gray","green", "red","white", "yellow"];
+  static final List _jWord= ["kuro", "chairo", "kusunda kiiro", "haiiro", "midori", "aka", "shiro", "kiiro"];
+
+  static final List<String> _Path = [
+    "assets/images/colors/color_black.png",
+    "assets/images/colors/color_brown.png",
+    "assets/images/colors/color_dusty_yellow.png",
+    "assets/images/colors/color_gray.png",
+    "assets/images/colors/color_green.png",
+    "assets/images/colors/color_red.png",
+    "assets/images/colors/color_white.png",
+    "assets/images/colors/yellow.png",
+  ];
+
+  static final List<String> _sound = [
+    "sounds/colors/black.wav",
+    "sounds/colors/brown.wav",
+    "sounds/colors/dusty_yellow.wav",
+    "sounds/colors/gray.wav",
+    "sounds/colors/green.wav",
+    "sounds/colors/red.wav",
+    "sounds/colors/white.wav",
+    "sounds/colors/yellow.wav",
+  ];
+
+  static eNumGet(int idx) =>_eWord[idx];
+  static jNumGet(int idx) =>_jWord[idx];
+  static pathGet(int idx) =>_Path[idx];
+  static soundGet(int idx) => _sound[idx];
+
 }

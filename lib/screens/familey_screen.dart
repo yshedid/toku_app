@@ -15,9 +15,9 @@ class FamilyScreen extends StatelessWidget {
         body: ListView.builder(
           itemCount: 10,
           itemBuilder:(context, index) {
-            return familyUi(image_path: FamilyData.pathGet(index),
+            return screenUi(image_path: FamilyData.pathGet(index),
                 jtext: FamilyData.eNumGet(index), etext: FamilyData.jNumGet(index),
-                soundFileName: FamilyData.soundGet(index));
+                soundFileName: FamilyData.soundGet(index), bgcolor: Color(0xff517f33));
           }, ));;
   }
 }
